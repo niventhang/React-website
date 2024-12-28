@@ -1,0 +1,446 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.overall{
+    width:100%;
+    /* padding: 20px; */
+    background-color: rgba(210, 19, 19, 0.245);
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(17, 12, 27, 0.915);
+}
+
+nav h1 {
+  margin: 0;
+  color: rgb(92, 88, 88);
+}
+
+nav span {
+  color: #38393e;
+}
+
+.input {
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:red ;*/
+    position: relative;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid lightgreen;
+  outline: none;
+}
+
+.icon {
+  background: none;
+  border: none;
+  color: rgb(232, 13, 13);
+  cursor: pointer;
+  font-size: 34px;
+}
+
+.billbox {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(211, 225, 224, 0.986);
+  color: black;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  border-radius: 1px;
+  border: 2px solid red;
+  z-index: 10;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.save {
+  margin: 5px;
+  width: 30%;
+  height: 40px;
+  color: #f9f9f9;
+  background-color: rgb(12, 221, 151);
+  text-align: center;
+  border: none;
+}
+.close {
+  width: 30%;
+  height: 40px;
+  color: #f9f9f9;
+  background-color: rgb(240, 7, 7);
+  text-align: center;
+  border: none;
+}
+
+.billbox h2 {
+  margin: 0 0 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 10px;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.cont1 {
+  margin: 10px;
+  width: 330px;
+  height: 300px;
+  border: 1px solid rgba(0, 255, 217, 0.227);
+  border-radius: 5px;
+  position: relative;
+}
+.cont1 h4 {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(17, 18, 19, 0.429);
+  position: absolute;
+  bottom: -1px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0.2px 0.1px 10px rgba(238, 9, 9, 0.859);
+  font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  padding:20px
+}
+
+
+.cont1 img {
+  width: 330px;
+  height: 300px;
+}
+
+.cont1 p {
+  background-color: rgba(17, 175, 223, 0.97);
+  height: 20px;
+  width: 60px;
+  padding: 5px;
+  color: white;
+  border: none;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  position: absolute;
+  top: -10px;
+}
+.cont1 button {
+  color: #ddd;
+  background-color: rgba(60, 158, 87, 0.849);
+  padding: 5px;
+  border: 2px solid rgb(13, 196, 247);
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .overall {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(23, 26, 26, 0.685);
+    color: white;
+  }
+
+  nav h1 {
+    margin: 0;
+    color: rgb(16, 145, 214);
+    font-size: 20px;
+  }
+
+  nav span {
+    color: #2040e0;
+  }
+
+  .input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .input input {
+    width: 150%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid lightgreen;
+    outline: none;
+  }
+
+  .icon {
+    background: none;
+    border: none;
+    color: rgb(232, 13, 13);
+    cursor: pointer;
+    font-size: 60px;
+  }
+
+  .billbox {
+    width:310px;
+        min-height:500px;
+        background-color:rgb(165, 181, 187);
+        border:2px solid lightblue;
+        position: absolute;
+        top: 60px;
+        z-index: 2;
+  }
+
+  .box {
+
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .cont1 {
+    /* margin: 10px; */
+    width: 150%;
+    height: 300px;
+    border: 1px solid rgba(0, 255, 217, 0.227);
+    border-radius: 5px;
+    position: relative;
+  }
+  .cont1 h4 {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(17, 18, 19, 0.429);
+    position: absolute;
+    bottom: -2px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0.2px 0.1px 10px rgba(238, 9, 9, 0.859);
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+  }
+  .cont1 img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .cont1 p {
+    background-color: rgba(17, 175, 223, 0.97);
+    height: 20px;
+    width: 60px;
+    padding: 5px;
+    color: white;
+    border: none;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    top: -10px;
+  }
+  .cont1 button {
+    color: #ddd;
+    background-color: rgba(60, 158, 87, 0.849);
+    padding: 5px;
+    border: 2px solid rgb(13, 196, 247);
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .overall {
+        width: 100%;
+      }
+      nav {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(23, 26, 26, 0.685);
+        color: white;
+      }
+      .billbox {
+        width:400px;
+            min-height:500px;
+            background-color:rgb(165, 181, 187);
+            border:2px solid lightblue;
+            position: absolute;
+            top: 60px;
+            z-index: 2;
+      }
+    
+      .box {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        background-color: #f9f9f9;
+      }
+    
+      .cont1 {
+        /* margin: 10px; */
+        width: 105%;
+        height: 300px;
+        border: 1px solid rgba(0, 255, 217, 0.227);
+        border-radius: 5px;
+        position: relative;
+        right:20px
+      }
+      .cont1 h4 {
+        width: 100%;
+        height: 70px;
+        background-color: rgba(17, 18, 19, 0.429);
+        position: absolute;
+        bottom: -2px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0.2px 0.1px 10px rgba(238, 9, 9, 0.859);
+        font-family: "Afacad Flux", serif;
+        font-optical-sizing: auto;
+        padding:20px
+      }
+      .cont1 img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+    
+@media screen and (min-width:800px) and (max-width:1224px) {
+    .overall {
+        width: 100%;
+      }
+      nav {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(23, 26, 26, 0.685);
+        color: white;
+      }
+      .billbox {
+        width:400px;
+            min-height:500px;
+            background-color:rgb(165, 181, 187);
+            border:2px solid lightblue;
+            position: absolute;
+            top: 60px;
+            z-index: 2;
+      }
+    
+      .box {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: #f9f9f9;
+      }
+    
+      .cont1 {
+        /* margin: 10px; */
+        width: 100%;
+        height: 200px;
+        border: 1px solid rgba(0, 255, 217, 0.227);
+        border-radius: 5px;
+      }
+      .cont1 h4 {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(17, 18, 19, 0.429);
+        position: absolute;
+        top: 230px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0.2px 0.1px 10px rgba(238, 9, 9, 0.859);
+        font-family: "Afacad Flux", serif;
+        font-optical-sizing: auto;
+        /* padding:20px */
+      }
+      .cont1 img {
+        width: 100%;
+        height: 190px;
+      }
+      .save {
+        margin: 5px;
+        width: 30%;
+        height: 40px;
+        color: #f9f9f9;
+        background-color: rgb(12, 221, 151);
+        text-align: center;
+        border: none;
+      }
+      .close {
+        width: 30%;
+        height: 40px;
+        color: #f9f9f9;
+        background-color: rgb(240, 7, 7);
+        text-align: center;
+        border: none;
+      }
+      
+      .billbox h2 {
+        margin: 0 0 10px;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      table th,
+      table td {
+        text-align: left;
+        padding: 10px;
+        color: black;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .box {
+        /* display: flex;
+        flex-wrap: wrap; */
+        
+        padding: 20px;
+        /* justify-content: center; */
+        background-color: #f9f9f9;
+      }
+      .cont1 button {
+        color: #ddd;
+        background-color: rgba(60, 158, 87, 0.849);
+        padding: 5px;
+        border: 2px solid rgb(13, 196, 247);
+      }
+    }     
+    
