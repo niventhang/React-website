@@ -191,7 +191,8 @@ export default function Product() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <MdOutlineAddShoppingCart onClick={addToCart} className="icon" />
+         
+          <MdOutlineAddShoppingCart onClick={addToCart} className="icon"/> 
         </div>
       </nav>
       {billBoxVisible && (

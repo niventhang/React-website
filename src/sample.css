@@ -54,18 +54,18 @@ nav span {
 .icon {
   background: none;
   border: none;
-  color: rgb(232, 13, 13);
+  color: rgb(13, 232, 50);
   cursor: pointer;
   font-size: 34px;
 }
 
 .billbox {
-  width: 100px;
-  height: 50px;
+  width: 35%;
+  height: 600px;
   background-color: rgba(211, 225, 224, 0.986);
   color: black;
   position: absolute;
-  top: 90px;
+  top: 80px;
   right: 0px;
   border-radius: 1px;
   border: 2px solid red;
@@ -113,7 +113,7 @@ table td {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  background-color: #f9f9f9;
+  background-color: #c9c1c1;
 }
 
 .cont1 {
